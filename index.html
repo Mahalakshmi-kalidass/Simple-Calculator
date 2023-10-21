@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+   
+        <div class="container">
+            <div class="screen">
+                <input class="screen" id="screen" type="Text Area" disabled="true" />
+            </div>
+            <div class="clear smallbox">
+                <input class="smallbox clear" id="clr" type="button" value="AC" onclick="clearAll()"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="9"/>
+            </div>
+            <div class="number smallbox" >
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="8"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number" type="button" onclick="giveVal(this)" value="7"/>
+            </div> <div class="operator smallbox"> 
+                <input class="smallbox operator"  type="button" onclick="giveOperator(this)" value="+"/>
+
+            </div>
+
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="6"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="5"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="4"/>
+            </div>
+            <div class="operator smallbox"> 
+                <input class="smallbox operator"  type="button" onclick="giveOperator(this)" value="-"/> 
+            </div>
+
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="3"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="2"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="1"/>
+            </div> 
+            <div class="operator smallbox"> 
+                <input class="smallbox operator"  type="button" onclick="giveOperator(this)" value="/"/>
+            </div>
+
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="0"/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="giveVal(this)" value="."/>
+            </div>
+            <div class="number smallbox">
+                <input class="smallbox number"  type="button" onclick="calc()" value="="/>
+            </div> 
+            <div class="operator smallbox"> 
+                <input class="smallbox operator"  type="button" onclick="giveOperator(this)" value="*"/> 
+            </div>
+
+        </div>
+   <script src="./script.js"></script>
+</body>
+<footer class="copyright">
+    &#169 2023 Calculator.All Rights Reserved | Designed By Mahalakshmi K
+</footer>
+</html>
